@@ -1,0 +1,4 @@
+--require rails_helper -r turnip/rspec
+--color
+--format documentation
+--require spec_helper
