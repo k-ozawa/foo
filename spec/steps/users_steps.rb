@@ -1,4 +1,3 @@
-# coding: windows-31j
 step 'ユーザー管理の一覧画面を開く' do
   visit '/users'
 end

@@ -1,4 +1,3 @@
-# coding: windows-31j
 # language: ja
 
 機能: ユーザー管理
