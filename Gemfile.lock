@@ -193,6 +193,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 5.0)
   sqlite3
+  therubyracer
   turbolinks (~> 5)
   turnip
   tzinfo-data
