@@ -1,34 +1,34 @@
 #encoding:utf-8
-step 'ƒ†[ƒU[ŠÇ—‚Ìˆê——‰æ–Ê‚ðŠJ‚­' do
+step 'ãƒ¦ãƒ¼ã‚¶ãƒ¼ç®¡ç†ã®ä¸€è¦§ç”»é¢ã‚’é–‹ã' do
   visit '/users'
 end
 
-step '‰æ–Ê‚ð–ÚŽ‹' do
+step 'ç”»é¢ã‚’ç›®è¦–' do
   save_and_open_page
 end
 
-step ':name ƒŠƒ“ƒN‚ðƒNƒŠƒbƒN‚·‚é' do |name|
+step ':name ãƒªãƒ³ã‚¯ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹' do |name|
   first(:link, name).click
 end
 
-step ':name ƒ{ƒ^ƒ“‚ðƒNƒŠƒbƒN‚·‚é' do |name|
+step ':name ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹' do |name|
   first(:button, name).click
 end
 
-step 'ƒ†[ƒU[ŠÇ—‚ÌV‹K“o˜^‰æ–Ê‚ª•\Ž¦‚³‚ê‚é' do
+step 'ãƒ¦ãƒ¼ã‚¶ãƒ¼ç®¡ç†ã®æ–°è¦ç™»éŒ²ç”»é¢ãŒè¡¨ç¤ºã•ã‚Œã‚‹' do
   current_path = URI.parse(current_url).path
   expect(current_path).to eq '/users/new'
 end
 
-step 'ƒ†[ƒU[ŠÇ—‚ÌÚ×‰æ–Ê‚ª•\Ž¦‚³‚ê‚é' do
+step 'ãƒ¦ãƒ¼ã‚¶ãƒ¼ç®¡ç†ã®è©³ç´°ç”»é¢ãŒè¡¨ç¤ºã•ã‚Œã‚‹' do
   current_path = URI.parse(current_url).path
   expect(current_path).to eq "/users/#{User.last.id}"
 end
 
-step 'ƒ†[ƒU[ŠÇ—‚ÌV‹K“o˜^‰æ–Ê‚ðŠJ‚­' do
+step 'ãƒ¦ãƒ¼ã‚¶ãƒ¼ç®¡ç†ã®æ–°è¦ç™»éŒ²ç”»é¢ã‚’é–‹ã' do
   visit '/users/new'
 end
 
-step ':field ‚É :value ‚Æ“ü—Í‚·‚é' do |field, value|
+step ':field ã« :value ã¨å…¥åŠ›ã™ã‚‹' do |field, value|
   fill_in(field, :with => value)
 end
