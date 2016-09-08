@@ -48,11 +48,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'coffee-script-source', '1.8.0'
 
-group :development do
-  gem 'capistrano'
-  gem 'capistrano-rails'
-  gem 'capistrano-rbenv'
-  gem 'capistrano-bundler'
-  gem 'capistrano_colors'
-  gem 'capistrano-ext'
-end
+
+
+
+
+
+
+
+
