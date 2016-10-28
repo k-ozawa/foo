@@ -48,7 +48,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'coffee-script-source', '1.8.0'
 
-
+group :development do
+  gem 'metric_fu'
+  gem 'rubocop', require: false
+  gem 'rubocop-checkstyle_formatter', require: false
+end
 
 
 
